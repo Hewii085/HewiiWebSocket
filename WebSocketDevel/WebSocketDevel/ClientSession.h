@@ -1,5 +1,6 @@
 #pragma once
-#include <winsock.h>
+#include <winsock2.h>
+
 class ClientSession
 {
 public:
@@ -7,6 +8,7 @@ public:
 	~ClientSession();
 
 	inline SOCKET GetSocket() { return m_Socket; }
+	void PreRecv();
 private:
 
 	SOCKET m_Socket;

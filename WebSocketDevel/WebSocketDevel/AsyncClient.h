@@ -12,6 +12,7 @@ public:
 
 private:
 	int m_port;
+
 	SOCKET m_ServerSock;
 	SOCKADDR_IN m_serverAddr;
 
